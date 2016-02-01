@@ -13,10 +13,10 @@ Fireball::Fireball(GameState &gameStatee, Cliff &clifff, sf::Texture &texture, s
     fireballS.setTexture(*fireballT);
     fireballS.setOrigin(fireballS.getLocalBounds().width/2, fireballS.getLocalBounds().height/2);
     fireballS.setScale(BOXCONST *1.5 * cliff->scalingFactor.x, BOXCONST * 1.5 * cliff->scalingFactor.y);
-    fireballS.setRotation(gameState->player1.getRotation()-90);
-    startingPos.x = gameState->pos1.x;
-    startingPos.y = gameState->pos1.y;
-    fireballS.setPosition(startingPos.x, gameState->pos1.y);
+    fireballS.setRotation(gameState->players.front().playerS.getRotation()-90);
+    startingPos.x = gameState->players.front().pos.x;
+    startingPos.y = gameState->players.front().pos.y;
+    fireballS.setPosition(startingPos.x, gameState->players.front().pos.y);
     collided = false;
 
 

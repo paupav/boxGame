@@ -1,12 +1,11 @@
 #include "Cliff.hpp"
-#include "Icon.hpp"
 #include <iostream>
 Cliff::Cliff(Cliff &clifff)
 {
 
     States.push_back(init);
-    scalingFactor.x = 0.5;
-    scalingFactor.y = 0.5;
+    scalingFactor.x = 0.4;
+    scalingFactor.y = 0.4;
     icon.loadFromFile("boxIcon.png");
     createWindow();
     cliff = &clifff;
@@ -42,6 +41,7 @@ void Cliff::run()
             gameState.run();
         break;
         case 4: //Pause state
+
         break;
         case 5: //Editor state
             editorState.run();

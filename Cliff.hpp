@@ -10,6 +10,7 @@
 #include "GameState.hpp"
 #include "EditorState.hpp"
 #define BOXCONST 0.15
+#define RAD 57.29
 
 class Cliff
 {
