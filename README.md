@@ -24,16 +24,21 @@ https://github.com/paupav/boxGameServer
 ## TO DO:
 
 ### game
--player - box collision
+- rewrite whole game
 
--make game server independent
+~~- player - box collision~~
 
--load .boxMaps and save them
+~~- make game server independent~~
 
--rewrite client-server communication
+~~- load .boxMaps and save them~~
+
+~~- rewrite client-server communication~~
 
 ### editor
--saving map dialog
+- rewrite few parts of the editor so that it shares more code with game
+  - the way images, audio etc. are loaded
 
--support for editing .boxMap files
+- saving map dialog
+
+- support for editing .boxMap files
 
